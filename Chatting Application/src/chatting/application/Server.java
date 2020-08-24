@@ -48,7 +48,7 @@ public class Server implements ActionListener{
            }
        });
        
-       ImageIcon i4 = new ImageIcon(ClassLoader.getSystemResource("chatting/application/icons/1.png"));
+       ImageIcon i4 = new ImageIcon(ClassLoader.getSystemResource("chatting/application/icons/dp.png"));
        Image i5 = i4.getImage().getScaledInstance(60, 60, Image.SCALE_DEFAULT);
        ImageIcon i6 = new ImageIcon(i5);
        JLabel l2 = new JLabel(i6);

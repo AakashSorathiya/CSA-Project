@@ -41,7 +41,7 @@ public class UserFour extends JFrame implements ActionListener, Runnable{
            }
        });
        
-       ImageIcon i4 = new ImageIcon(ClassLoader.getSystemResource("group/chatting/application/icons/mirzapur.png"));
+       ImageIcon i4 = new ImageIcon(ClassLoader.getSystemResource("group/chatting/application/icons/dp.png"));
        Image i5 = i4.getImage().getScaledInstance(60, 60, Image.SCALE_DEFAULT);
        ImageIcon i6 = new ImageIcon(i5);
        JLabel l2 = new JLabel(i6);
@@ -103,7 +103,7 @@ public class UserFour extends JFrame implements ActionListener, Runnable{
        t1.addKeyListener(new KeyAdapter() {
            public void keyPressed(KeyEvent e) {
              if (e.getKeyCode() == KeyEvent.VK_ENTER) {
-           	  String str = "Ali:\n"+t1.getText();
+           	  String str = uname+":\n"+t1.getText();
                  try{
                      writer.write(str);
                      writer.write("\r\n");

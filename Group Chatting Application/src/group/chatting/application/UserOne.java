@@ -38,7 +38,7 @@ public class UserOne extends JFrame implements ActionListener, Runnable{
            }
        });
        
-       ImageIcon i4 = new ImageIcon(ClassLoader.getSystemResource("group/chatting/application/icons/mirzapur.png"));
+       ImageIcon i4 = new ImageIcon(ClassLoader.getSystemResource("group/chatting/application/icons/dp.png"));
        Image i5 = i4.getImage().getScaledInstance(60, 60, Image.SCALE_DEFAULT);
        ImageIcon i6 = new ImageIcon(i5);
        JLabel l2 = new JLabel(i6);
@@ -59,11 +59,11 @@ public class UserOne extends JFrame implements ActionListener, Runnable{
        l6.setBounds(350, 20, 35, 30);
        p1.add(l6);
        
-       ImageIcon i14 = new ImageIcon(ClassLoader.getSystemResource("group/chatting/application/icons/3icon.png"));
-       Image i15 = i14.getImage().getScaledInstance(13, 25, Image.SCALE_DEFAULT);
+       ImageIcon i14 = new ImageIcon(ClassLoader.getSystemResource("group/chatting/application/icons/add.png"));
+       Image i15 = i14.getImage().getScaledInstance(30, 30, Image.SCALE_DEFAULT);
        ImageIcon i16 = new ImageIcon(i15);
        JLabel l7 = new JLabel(i16);
-       l7.setBounds(410, 20, 13, 25);
+       l7.setBounds(410, 20, 30, 30);
        p1.add(l7);
        
        l7.addMouseListener(new MouseAdapter(){
@@ -91,7 +91,7 @@ public class UserOne extends JFrame implements ActionListener, Runnable{
 					public void actionPerformed(ActionEvent e) {
 						// TODO Auto-generated method stub
 						d.setVisible(false);
-						int locx = ctr*440 + 10;
+						int locx = ctr*440 + 20;
 						ctr += 1;
 						String name = uname.getText();
 						UserFour one = new UserFour(name, locx);
@@ -110,7 +110,7 @@ public class UserOne extends JFrame implements ActionListener, Runnable{
        p1.add(l3);   
        
        
-       JLabel l4 = new JLabel("Ali, Yatrik, Chokshi, Aakash");
+       JLabel l4 = new JLabel("Ali, Aakash, Chokshi, Yatrik");
        l4.setFont(new Font("SAN_SERIF", Font.PLAIN, 14));
        l4.setForeground(Color.WHITE);
        l4.setBounds(110, 35, 160, 20);
